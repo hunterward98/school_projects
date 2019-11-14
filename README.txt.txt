@@ -3,11 +3,14 @@ assignments that I've worked on in school that I feel are worthy to post.
 Some of these assignments I have added on to after the fact, and I have
 tried to keep their implementation as close to the original as possible.
 
-All of these assignments were developed using gedit in a virtual machine
+Most of these assignments were developed using gedit in a virtual machine
 the school provides, based on lUbuntu. It already comes with CMake and
 GTest installed for us, so development is really easy. Each one will come
 with a separate README with information on how it works, how it was compiled,
-and other relevant information.
+and other relevant information. Any assignment that was developed a different way
+will be put in a folder titles accordingly. For example, any programs in Assembly
+will be put in the folder titled Assembly, and will have a README providing
+information on all programs and how they were constructed, tested, and ran.
 
 I hope this provides you a general idea of what I am capable of, as that
 is the whole point of this repository! I do not intend for others to try
