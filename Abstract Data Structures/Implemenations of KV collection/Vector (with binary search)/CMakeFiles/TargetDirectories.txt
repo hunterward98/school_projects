@@ -1,4 +1,0 @@
-/home/student/Desktop/CPSC223/hw5/CMakeFiles/rebuild_cache.dir
-/home/student/Desktop/CPSC223/hw5/CMakeFiles/edit_cache.dir
-/home/student/Desktop/CPSC223/hw5/CMakeFiles/hw5test.dir
-/home/student/Desktop/CPSC223/hw5/CMakeFiles/hw5perf.dir

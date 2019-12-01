@@ -1,7 +1,0 @@
-This is a folder containing various assignments from beginner level courses
-that I found interesting and that originally inspired me to switch to
-Computer Engineering.
-
-The battleship folder is currently empty - I want to add it once I add
-some more logic form the AI and streamline the experience, as it feels
-clunky.

@@ -7,8 +7,8 @@ find_package(GTest REQUIRED)
 include_directories(${GTEST_INCLUDE_DIRS})
 
 # create unit test executable
-add_executable(binsearch_test binsearch_tests.cpp)
-target_link_libraries(binsearch_test ${GTEST_LIBRARIES} pthread)
+add_executable(./bst_tests bst_tests.cpp)
+target_link_libraries(bst_tests ${GTEST_LIBRARIES} pthread)
 
 # create performance executable
-add_executable(binsearch_perf binsearch_perf.cpp)
+add_executable(bst_perf bst_perf.cpp)
