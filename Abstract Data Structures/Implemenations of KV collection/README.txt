@@ -5,7 +5,10 @@ a testing suite, data inputs, and are based off the abstract collection class
 outlined in the file collection.h.
 
 I did not intend for these to be ran, but for you to just look at. If you
-wish to run them, read how I did it at the bottom.
+wish to run them, read how I did it at the bottom. As of right now (12/1/19),
+I am holding off on updating the repository with old assignments so I can 
+focus on any assignments and projects I have due by the end of the semester,
+and I will return to updating this repository then.
 
 Some of these assignments built off each other. For example, we did a
 Linked List implementation before adding the different sorting alogrithms,
