@@ -12,6 +12,11 @@ These assignments will span across all four years at my time at Gonzaga.
 You'll see one of my first assignments, battleship! You'll also run into
 one of my latest, a file system for a real-time OS. I want to show my
 progress, but also all the experience I've gained strictly through University.
+Anyways, I've split this directory into three folders: freshman/sophomore projects,
+junior year projects, and senior year projects. Within those is a folder
+named after the class title. Some of these may only contain one assignment,
+depending on what we did in the course. So, I'll be putting these in a 
+"one-off" folder.
 
 I hope this provides you a general idea of what I am capable of, as that
 is the whole point of this repository! I do not intend for others to try
