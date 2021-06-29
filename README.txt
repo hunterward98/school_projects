@@ -22,7 +22,7 @@ You'll see one of my first assignments, battleship! You'll also run into
 one of my latest, a file system for a real-time OS. I want to show my
 progress, but also all the experience I've gained strictly through University.
 Anyways, I've split this directory into the title of the classes that I
-took throughout my time at GU. Because of the aforementioned issue about
+took throughout my time at GU that I enjoyed. Because of the aforementioned issue about
 not getting most of my work from the University network drive, my projects
 from Operating Systems, Parallel Computing, and Embedded Systems are
 gone forever :( Fortunately, everything I learned from those classes is
