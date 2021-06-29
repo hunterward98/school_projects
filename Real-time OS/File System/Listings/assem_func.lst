@@ -1,0 +1,49 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000                 AREA             |.text|, CODE, READONLY, ALIGN=
+2
+    2 00000000                 EXPORT           ReadWord
+    3 00000000         
+    4 00000000         ReadWord
+    5 00000000 B502            PUSH             {LR, R1}
+    6 00000002 6801            LDR              R1, [R0]
+    7 00000004 B402            PUSH             {R1}
+    8 00000006 BC01            POP              {R0}
+    9 00000008 E8BD 4002       POP              {LR, R1}
+   10 0000000C 4770            BX               LR
+   11 0000000E         
+   12 0000000E                 END
+Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M4 --apcs=interw
+ork --depend=.\objects\assem_func.d -o.\objects\assem_func.o -I.\RTE\_Target_1 
+-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0\CMSIS\Core\Include -IC:\Keil_v5\ARM\PACK\
+Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123 --predefine="__EVAL SETA 1" --predef
+ine="__UVISION_VERSION SETA 523" --predefine="_RTE_ SETA 1" --predefine="TM4C12
+3GH6PM SETA 1" --list=.\listings\assem_func.lst assem_func.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+.text 00000000
+
+Symbol: .text
+   Definitions
+      At line 1 in file assem_func.s
+   Uses
+      None
+Comment: .text unused
+ReadWord 00000000
+
+Symbol: ReadWord
+   Definitions
+      At line 4 in file assem_func.s
+   Uses
+      At line 2 in file assem_func.s
+Comment: ReadWord used once
+2 symbols
+336 symbols in table

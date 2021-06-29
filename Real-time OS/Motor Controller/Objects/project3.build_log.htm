@@ -1,0 +1,154 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.23.0.0
+Copyright (C) 2017 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Matthew Trimble, Gonzaga, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.23
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 4 (build 422)
+Assembler:       Armasm.exe V5.06 update 4 (build 422)
+Linker/Locator:  ArmLink.exe V5.06 update 4 (build 422)
+Library Manager: ArmAr.exe V5.06 update 4 (build 422)
+Hex Converter:   FromElf.exe V5.06 update 4 (build 422)
+CPU DLL:         SARMCM3.DLL V5.23
+Dialog DLL:      DCM.DLL V1.15.0.0
+Target DLL:      lmidk-agdi.dll V???
+Dialog DLL:      TCM.DLL V1.27.0.0
+ 
+<h2>Project:</h2>
+N:\RTOS\Project_3_current_3\Project_3_current_3\Project_3_current\Project 3\project3.uvprojx
+Project File Date:  04/27/2021
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 4 (build 422)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'Target 1'
+assembling ASCII_Conversions.s...
+assembling Keypad.s...
+assembling osasm_V2.s...
+assembling startup_TM4C123.s...
+RTE\Device\TM4C123GH6PM\startup_TM4C123.s(403): warning: A1274W: '\' at end of comment
+assembling LCD.s...
+LCD.s(285): warning: A1581W: Added 2 bytes of padding at address 0x222
+compiling system_TM4C123.c...
+compiling Voltage2RPM.c...
+compiling User.c...
+User.c(21): warning:  #223-D: function "Read_Key" declared implicitly
+  		Read_Key();
+User.c(26): warning:  #223-D: function "OS_FIFO_Put" declared implicitly
+  				OS_FIFO_Put(key);
+User.c(28): warning:  #223-D: function "OS_Sleep" declared implicitly
+  				OS_Sleep(20);
+User.c(42): warning:  #223-D: function "OS_Wait" declared implicitly
+  		OS_Wait(&LCD);
+User.c(43): warning:  #223-D: function "Set_Position" declared implicitly
+  		Set_Position(0x00);
+User.c(44): warning:  #223-D: function "Display_Msg" declared implicitly
+  		Display_Msg("Input RPM:");
+User.c(45): warning:  #223-D: function "OS_Signal" declared implicitly
+  		OS_Signal(&LCD);
+User.c(48): warning:  #223-D: function "OS_FIFO_Get" declared implicitly
+  			num = OS_FIFO_Get();
+User.c(83): warning:  #223-D: function "PWM1C_Duty" declared implicitly
+  				PWM1C_Duty(U);
+User.c(84): warning:  #177-D: variable "j"  was declared but never referenced
+  				int j = 0;
+User.c(126): warning:  #223-D: function "RecvMail" declared implicitly
+  		voltage = (RecvMail()*10000)/126; // estimated speed (Get mail)
+User.c(129): warning:  #223-D: function "Current_speed" declared implicitly
+  		X = Current_speed(voltage);
+User.c(151): warning:  #223-D: function "PWM1C_Duty" declared implicitly
+  		PWM1C_Duty(U); // output to actuator
+User.c(153): warning:  #223-D: function "OS_Sleep" declared implicitly
+  		OS_Sleep(5);
+User.c(185): warning:  #223-D: function "OS_Wait" declared implicitly
+  		OS_Wait(&LCD);
+User.c(186): warning:  #223-D: function "Set_Position" declared implicitly
+  		Set_Position(0x48);
+User.c(187): warning:  #223-D: function "Display_Msg" declared implicitly
+  		Display_Msg("C:      ");
+User.c(191): warning:  #223-D: function "OS_Signal" declared implicitly
+  		OS_Signal(&LCD);
+User.c(192): warning:  #223-D: function "OS_Sleep" declared implicitly
+  		OS_Sleep(250); // prevents the LCD refreshing too fast so we can read it
+User.c(202): warning:  #223-D: function "OS_Init" declared implicitly
+  	OS_Init();
+User.c(203): warning:  #223-D: function "OS_FIFO_Init" declared implicitly
+  	OS_FIFO_Init();
+User.c(204): warning:  #223-D: function "Init_LCD_Ports" declared implicitly
+  	Init_LCD_Ports();
+User.c(205): warning:  #223-D: function "Init_LCD" declared implicitly
+  	Init_LCD(); 
+User.c(206): warning:  #223-D: function "ADC_Init" declared implicitly
+  	ADC_Init();
+User.c(207): warning:  #223-D: function "PortB_Init" declared implicitly
+  	PortB_Init();
+User.c(209): warning:  #223-D: function "PWM_Init" declared implicitly
+  	PWM_Init(period, duty);
+User.c(210): warning:  #223-D: function "Timer0_Config" declared implicitly
+  	Timer0_Config(Reload);
+User.c(211): warning:  #223-D: function "Init_Keypad" declared implicitly
+  	Init_Keypad();
+User.c(212): warning:  #223-D: function "OS_AddThreads" declared implicitly
+  	OS_AddThreads(&Task0, &Task1, &Task2, &Task3);
+User.c(213): warning:  #223-D: function "OS_Launch" declared implicitly
+  	OS_Launch(TIMESLICE);
+User.c(215): warning:  #1-D: last line of file ends without a newline
+  }
+User.c: 31 warnings, 0 errors
+compiling PWM.c...
+PWM.c(38): warning:  #1-D: last line of file ends without a newline
+  }
+PWM.c: 1 warning, 0 errors
+compiling ADC.c...
+ADC.c(32): warning:  #1-D: last line of file ends without a newline
+  }
+ADC.c: 1 warning, 0 errors
+compiling os_v2.c...
+os_v2.c(97): warning:  #223-D: function "readADC" declared implicitly
+  	int8_t ADCreading = readADC();
+os_v2.c(311): warning:  #175-D: subscript out of range
+  	tcbs[3].next = &tcbs[0]; // 2 points to 3
+os_v2.c(315): warning:  #175-D: subscript out of range
+  	SetInitialStack(3); Stacks[3][
+TACKSIZE-2] = (int32_t)(task3); // PC
+os_v2.c: 3 warnings, 0 errors
+linking...
+Program Size: Code=7096 RO-data=928 RW-data=92 ZI-data=1924  
+".\Objects\project3.axf" - 0 Error(s), 38 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.6.0.pack
+                ARM::CMSIS:CORE:5.3.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.3.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.TM4C_DFP.1.1.0.pack
+                Keil::Device:Startup:1.0.1
+                Texas Instruments Tiva C Series Device Support and Examples
+   * Component: Startup Version: 1.0.1
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_Target_1
+  C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0\CMSIS\Core\Include
+  C:\Keil_v5\ARM\PACK\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.3.0
+
+   * Component: Keil::Device:Startup:1.0.1
+      Source file:   Device\Source\system_TM4C123.c
+      Source file:   Device\Source\ARM\startup_TM4C123.s
+      Include file:  Device\Include\TM4C123\TM4C123.h
+Build Time Elapsed:  00:00:02
+</pre>
+</body>
+</html>

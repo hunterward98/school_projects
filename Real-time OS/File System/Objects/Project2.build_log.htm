@@ -1,0 +1,100 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.23.0.0
+Copyright (C) 2017 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Matthew Trimble, Gonzaga, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.23
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 4 (build 422)
+Assembler:       Armasm.exe V5.06 update 4 (build 422)
+Linker/Locator:  ArmLink.exe V5.06 update 4 (build 422)
+Library Manager: ArmAr.exe V5.06 update 4 (build 422)
+Hex Converter:   FromElf.exe V5.06 update 4 (build 422)
+CPU DLL:         SARMCM3.DLL V5.23
+Dialog DLL:      DCM.DLL V1.15.0.0
+Target DLL:      lmidk-agdi.dll V???
+Dialog DLL:      TCM.DLL V1.27.0.0
+ 
+<h2>Project:</h2>
+N:\RTOS\Project2\Project2.uvprojx
+Project File Date:  03/24/2021
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 4 (build 422)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'Target 1'
+assembling assem_func.s...
+compiling FlashProgram.c...
+assembling startup_TM4C123.s...
+compiling system_TM4C123.c...
+compiling OS_File_System.c...
+OS_File_System.c(60): warning:  #940-D: missing return statement at end of non-void function "OS_File_New" 
+  }
+OS_File_System.c(136): warning:  #940-D: missing return statement at end of non-void function "last_sector" 
+  }
+OS_File_System.c(185): warning:  #223-D: function "Flash_Write" declared implicitly
+  		write_status = Flash_Write(address + sector_offset + i*4, dataWord);
+OS_File_System.c(225): warning:  #223-D: function "ReadWord" declared implicitly
+  		DataWord = ReadWord(addr);
+OS_File_System.c(207): warning:  #177-D: variable "tmpData"  was declared but never referenced
+  	uint32_t tmpData = 0;
+OS_File_System.c(273): warning:  #223-D: function "ReadWord" declared implicitly
+  		DataWord = ReadWord(addr);
+OS_File_System.c: 6 warnings, 0 errors
+compiling Test_File_System.c...
+Test_File_System.c(15): warning:  #223-D: function "OS_FS_Init" declared implicitly
+    OS_FS_Init();
+Test_File_System.c(16): warning:  #223-D: function "OS_File_Format" declared implicitly
+    OS_File_Format();
+Test_File_System.c(19): warning:  #223-D: function "OS_File_New" declared implicitly
+    File0=OS_File_New();    // Create File0
+Test_File_System.c(25): warning:  #223-D: function "OS_File_Append" declared implicitly
+    Process_FB=OS_File_Append(File0, Data);
+Test_File_System.c(38): warning:  #223-D: function "OS_File_Size" declared implicitly
+    File_Size=OS_File_Size(File0);
+Test_File_System.c(39): warning:  #223-D: function "OS_File_Read" declared implicitly
+    Process_FB=OS_File_Read(File0, 1, Data);
+Test_File_System.c(52): warning:  #223-D: function "OS_File_Flush" declared implicitly
+    OS_File_Flush();
+Test_File_System.c(54): warning:  #1-D: last line of file ends without a newline
+  }
+Test_File_System.c: 8 warnings, 0 errors
+linking...
+Program Size: Code=1908 RO-data=652 RW-data=4 ZI-data=1636  
+".\Objects\Project2.axf" - 0 Error(s), 14 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.6.0.pack
+                ARM::CMSIS:CORE:5.3.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.3.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.TM4C_DFP.1.1.0.pack
+                Keil::Device:Startup:1.0.1
+                Texas Instruments Tiva C Series Device Support and Examples
+   * Component: Startup Version: 1.0.1
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_Target_1
+  C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0\CMSIS\Core\Include
+  C:\Keil_v5\ARM\PACK\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.3.0
+
+   * Component: Keil::Device:Startup:1.0.1
+      Source file:   Device\Source\system_TM4C123.c
+      Include file:  Device\Include\TM4C123\TM4C123.h
+      Source file:   Device\Source\ARM\startup_TM4C123.s
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>
