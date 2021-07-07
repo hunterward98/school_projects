@@ -1,5 +1,5 @@
 This class was focused on developing real-time OS applications in C.
-These were two large group projects that we did, with the motor controller
+There were a few large group projects that we did, with the motor controller
 project being our final project of the semester that built upon
 previous projects in the course (so they aren't included). This
 includes thread scheduling, multi-threading, and other basic RTOS
