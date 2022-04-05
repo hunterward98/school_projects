@@ -2,25 +2,19 @@ This folder contains a final project that was worked on for the majority
 of the semester. Everything we learned in this class was used in this
 project, so I think it's perfect to include it.
 
-These two java files together create a program that's intended to
-be used for inventory management. There is also some basic
-stats shown (I believe these were things that needed to be
-restocked, most sold, and highest profit), but also a view that
-allows someone to check outgoing orders for packing.
-Unfortunately, this project no longer works mostly because there
-is no database for it to connect to. Because it relies on the
-result sets actually returning something other than null, even if
-the resultset is empty, it's simply not worth having a SQL server
-just for this project. If there was a way to hardcode an empty resultset,
-it's likely the code could be modified such that the GUI would
-work completely. However, most of the GUI relies on tables.
-But just "for fun," I have included a jar file which is the very
-first time we were able to get the application to run properly.
-For me this is nostaligc, I remember how good it felt to have
-something like this running when I had never created a GUI before.
-This is when the MainAppFrame.java file likely had about 150 lines
-of code, compared to the 860 lines it currently has. If you cannot
-get it to work, you may have to install the Java SDK.
+MainAppFrame.java and Queries.java are used to create a
+database management program with a GUI. MainAppFrame.java
+is the whole GUI, which then utilizes Queries.java to
+read/write to a SQL database. Unfortunately, the program immediately
+crashes if it cannot establish a connection, and I have not
+fixed it.
+
+This program is a basic inventory management program, meant
+for a small-scale business. Users can view basics statistics
+that are generated with queries, view all product information
+in a table view, add/remove products to the database, and
+track orders. There is also an option to manually add an
+order.
 
 Anyways, this was a project that was worked on for most of the semester
 for a database management class. Over the course of about ten weeks,
